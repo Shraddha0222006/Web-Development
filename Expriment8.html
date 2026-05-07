@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Complete Table Example</title>
+
+<style>
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: lightblue;
+}
+
+caption {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+tfoot {
+  background-color: lightgray;
+}
+</style>
+
+</head>
+<body>
+
+<table>
+
+  <!-- Table Caption -->
+  <caption>Student Report Table</caption>
+
+  <!-- Table Header -->
+  <thead>
+    <tr>
+      <th rowspan="2">Name</th>
+      <th colspan="2">Marks</th>
+      <th rowspan="2">Total</th>
+    </tr>
+    <tr>
+      <th>Math</th>
+      <th>Science</th>
+    </tr>
+  </thead>
+
+  <!-- Table Body -->
+  <tbody>
+    <tr>
+      <td>Gouri</td>
+      <td>90</td>
+      <td>85</td>
+      <td>175</td>
+    </tr>
+    <tr>
+      <td>Rahul</td>
+      <td>80</td>
+      <td>88</td>
+      <td>168</td>
+    </tr>
+    <tr>
+      <td>Priya</td>
+      <td>70</td>
+      <td>75</td>
+      <td>145</td>
+    </tr>
+  </tbody>
+
+  <!-- Table Footer -->
+  <tfoot>
+    <tr>
+      <td colspan="3">Average</td>
+      <td>162.6</td>
+    </tr>
+  </tfoot>
+
+</table>
+
+</body>
+</html>
